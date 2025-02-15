@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { CgMenu } from "react-icons/cg";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const handleNavToggle = () => setNav(!nav);
   return (
     <>
@@ -33,12 +33,12 @@ const NavBar = () => {
           <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
             TASTEBOOK
           </h1>
-          <ul className="p-4 uppercase ">
+          <ul className="p-4 uppercase  ">
             <li className="p-4  border-b border-gray-600">Category</li>
             <li className="p-4 border-b border-gray-600">About</li>
             <li className="p-4 border-b border-gray-600">Home</li>
             <li className="p-4 border-b border-gray-600">Contact</li>
-            <li className="p-4">Login</li>
+            <li className="p-4  hover:bg-white hover:text-black">Login</li>
           </ul>
         </div>
       </div>
