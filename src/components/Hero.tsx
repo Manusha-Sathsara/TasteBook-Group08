@@ -1,9 +1,20 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-
+import { CgSearch } from "react-icons/cg";
 const Hero = () => {
   return (
     <div className="text-white">
+      <div className="flex items-center justify-center mt-4 relative w-full max-w-[400px] mx-auto">
+        <input
+          type="text"
+          placeholder="Search recipes..."
+          className="w-full p-3 pl-5 pr-10 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:border-[#00df9a] transition duration-300"
+        />
+        <CgSearch
+          className="absolute right-3 text-gray-400 cursor-pointer hover:text-[#00df9a] transition duration-300"
+          size={20}
+        />
+      </div>
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto  text-center flex flex-col justify-center">
         <p className="text-[#00df9a] font-bold p-2 ">Unlock the Secrets of</p>
         <h1 className=" font-bold p-2 md:text-7xl sm:text-6xl text-4xl md:py-6">
@@ -15,7 +26,7 @@ const Hero = () => {
           </p>
           <ReactTyped
             className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-400 pl-2 md:pl-4"
-            strings={[" Recipes", " Dishes", " Tips and Tricks", " Live help"]}
+            strings={[" Recipes", " Dishes", " Cooking tips", " Live help"]}
             loop
             typeSpeed={120}
             backSpeed={120}
