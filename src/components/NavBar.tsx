@@ -16,8 +16,8 @@ const NavBar = () => {
           <li className="p-4">Contact</li>
           <li className="p-4">Login</li>
         </ul>
-        <div>
-          <AiOutlineMenu size={30} />
+        <div onClick={handleNavToggle}>
+          {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
         </div>
         <div className="fixed left-0 top-0 w-[60%] border-r-1 border-gray-900 bg-[#000300]">
           \
