@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <div className="text-white flex justify-between items-center h-17 max-w-[1240px] mx-auto px-4">
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">TASTEBOOK</h1>
-        <ul className="hidden md:flex ">
+        <ul className="hidden md:flex font-medium ">
           <li className="p-4">Home</li>
           <li className="p-4">Category</li>
           <li className="p-4">About</li>
