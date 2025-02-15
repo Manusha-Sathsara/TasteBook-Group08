@@ -7,20 +7,29 @@ const NavBar = () => {
   const handleNavToggle = () => setNav(!nav);
   return (
     <>
-      <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+      <div className="text-white flex justify-between items-center h-17 max-w-[1240px] mx-auto px-4">
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">TASTEBOOK</h1>
-        <ul className="flex hidden">
+        <ul className="hidden md:flex ">
           <li className="p-4">Home</li>
           <li className="p-4">Category</li>
           <li className="p-4">About</li>
           <li className="p-4">Contact</li>
           <li className="p-4">Login</li>
         </ul>
-        <div onClick={handleNavToggle}>
-          {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+        <div onClick={handleNavToggle} className="block md:hidden">
+          {!nav ? (
+            <AiOutlineClose size={30} className="ease-in-out duration-500" />
+          ) : (
+            <AiOutlineMenu size={30} className="ease-in-out duration-500" />
+          )}
         </div>
-        <div className="fixed left-0 top-0 w-[60%] border-r-1 border-gray-900 bg-[#000300]">
-          \
+        <div
+          className={
+            !nav
+              ? "fixed left-0 top-0 w-[60%] border-r-1 border-gray-900 bg-[#000300] ease-in-out duration-500"
+              : "fixed left-[-100%] ease-in-out duration-500"
+          }
+        >
           <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
             TASTEBOOK
           </h1>
