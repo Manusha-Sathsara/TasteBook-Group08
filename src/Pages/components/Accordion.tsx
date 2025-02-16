@@ -10,7 +10,7 @@ const Accordion: React.FC<AccordionProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-700">
+    <div className="border-1 rounded-md border-gray-800">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left p-4 text-white font-semibold hover:bg-gray-800 transition duration-300"

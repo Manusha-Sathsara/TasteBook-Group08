@@ -16,7 +16,9 @@ const Hero = () => {
         />
       </div>
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto  text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold p-2 ">Unlock the Secrets of</p>
+        <p className="text-[#00df9a] font-bold p-2 md:text-2xl ">
+          Unlock the Secrets of
+        </p>
         <h1 className=" font-bold p-2 md:text-7xl sm:text-6xl text-4xl md:py-6">
           Great Cooking
         </h1>
