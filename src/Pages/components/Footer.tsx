@@ -17,15 +17,16 @@ const Footer = () => {
           neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
           iste.
         </p>
+        <div className="flex justify-center gap-4 max-w-[75%} my-6 lg:justify-around">
+          <FaFacebookSquare size={30} />
+          <FaGithubSquare size={30} />
+          <FaInstagramSquare size={30} />
+          <FaTwitterSquare size={30} />
+          <FaDribbbleSquare size={30} />
+        </div>
       </div>
-      <div className="flex justify-between max-w-[75%} my-6">
-        <FaFacebookSquare size={30} />
-        <FaGithubSquare size={30} />
-        <FaInstagramSquare size={30} />
-        <FaTwitterSquare size={30} />
-        <FaDribbbleSquare size={30} />
-      </div>
-      <div className="lg:col-span-3 flex justify-between">
+
+      <div className="lg:col-span-2 flex justify-between mt-6">
         <div>
           <h6 className="font-medium text-gray-400">Services</h6>
           <ul>
