@@ -1,11 +1,11 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
-import SocialLinks from "./components/SocialLinks";
+import Footer from "./Pages/components/Footer";
+import Hero from "./Pages/components/Hero";
+import NavBar from "./Pages/components/NavBar";
+import SocialLinks from "./Pages/components/SocialLinks";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService";
-
+import QA from "./Pages/QA";
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
       <SocialLinks />
       <PrivacyPolicy />
       <TermsOfService />
+      <QA />
       <Footer />
     </>
   );
