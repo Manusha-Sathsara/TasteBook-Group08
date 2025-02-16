@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import SocialLinks from "./components/SocialLinks";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsOfService from "./Pages/TermsOfService";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <SocialLinks />
       <PrivacyPolicy />
+      <TermsOfService />
       <Footer />
     </>
   );
