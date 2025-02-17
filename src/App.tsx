@@ -6,13 +6,14 @@ import SocialLinks from "./Pages/components/SocialLinks";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService";
 import QA from "./Pages/QA";
+import Card from "./Pages/components/Card";
 function App() {
   return (
     <>
       <NavBar />
       <Hero />
       <SocialLinks />
-      <PrivacyPolicy />
+      <Card />
       <TermsOfService />
       <QA />
       <Footer />
