@@ -6,6 +6,7 @@ import SocialLinks from "./Pages/components/SocialLinks";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService";
 import QA from "./Pages/QA";
+import IngredientsTable from "./Pages/IngredientsTable";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <TermsOfService />
       <QA />
       <Footer />
+      <IngredientsTable />
     </>
   );
 }
