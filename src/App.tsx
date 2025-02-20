@@ -14,6 +14,10 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Category from "./Pages/Category";
 import RootLayout from "./layout/RootLayout";
+import Recipe01 from "./Pages/Recipes/Recipe01";
+import Recipe02 from "./Pages/Recipes/Recipe02";
+import Recipe03 from "./Pages/Recipes/Recipe03";
+import Recipe04 from "./Pages/Recipes/Recipe04";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -26,6 +30,10 @@ function App() {
         <Route path="qa" element={<QA />} />
         <Route path="privacypolicy" element={<PrivacyPolicy />} />
         <Route path="termsofservice" element={<TermsOfService />} />
+        <Route path="recipe01" element={<Recipe01 />} />
+        <Route path="recipe02" element={<Recipe02 />} />
+        <Route path="recipe03" element={<Recipe03 />} />
+        <Route path="recipe04" element={<Recipe04 />} />
       </Route>
     )
   );
