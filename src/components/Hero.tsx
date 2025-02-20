@@ -4,7 +4,7 @@ import { CgSearch } from "react-icons/cg";
 const Hero = () => {
   return (
     <div className="text-white">
-      <div className="flex items-center justify-center mt-4 relative w-full max-w-[400px] mx-auto">
+      <div className="flex items-center justify-center mt-4 relative -z-10 w-full max-w-[400px] mx-auto">
         <input
           type="text"
           placeholder="Search recipes..."
