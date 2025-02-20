@@ -2,8 +2,8 @@ import React from "react";
 import { CgSearch } from "react-icons/cg";
 const RecipeSearch = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center mt-4 relative z-10 w-full max-w-[400px] mx-auto">
+    <div className="p-4">
+      <div className="flex items-center justify-center mt-4  relative z-10 w-full max-w-[400px] mx-auto">
         <input
           type="text"
           placeholder="Search recipes..."
