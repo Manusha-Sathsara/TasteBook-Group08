@@ -18,7 +18,6 @@ import Recipe01 from "./Pages/Recipes/Recipe01";
 import Recipe02 from "./Pages/Recipes/Recipe02";
 import Recipe03 from "./Pages/Recipes/Recipe03";
 import Recipe04 from "./Pages/Recipes/Recipe04";
-import Accor from "./components/testcomp/Accor";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -40,7 +39,6 @@ function App() {
   );
   return (
     <>
-      <Accor />
       <RouterProvider router={router} />;
     </>
   );
