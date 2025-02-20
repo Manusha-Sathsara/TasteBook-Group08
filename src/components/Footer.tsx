@@ -1,11 +1,12 @@
 import React from "react";
 import {
-  FaDribbbleSquare,
   FaFacebookSquare,
   FaGithubSquare,
   FaInstagramSquare,
   FaTwitterSquare,
+  FaYoutubeSquare,
 } from "react-icons/fa";
+import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -18,11 +19,42 @@ const Footer = () => {
           iste.
         </p>
         <div className="flex justify-center gap-4 max-w-[75%} my-6 lg:justify-around">
-          <FaFacebookSquare size={30} />
-          <FaGithubSquare size={30} />
-          <FaInstagramSquare size={30} />
-          <FaTwitterSquare size={30} />
-          <FaDribbbleSquare size={30} />
+          <a
+            href="https:\\www.facebook.com"
+            target="_blank"
+            className="hover:text-[#00df9a] transition-colors duration-300"
+          >
+            <FaFacebookSquare size={30} />
+          </a>
+          <a
+            href="https:\\www.github.com"
+            target="_blank"
+            className="hover:text-[#00df9a] transition-colors duration-800"
+          >
+            <FaGithubSquare size={30} />
+          </a>
+          <a
+            href="https:\\www.instagram.com"
+            target="_blank"
+            className="hover:text-[#00df9a] transition-colors duration-300"
+          >
+            <FaInstagramSquare size={30} />
+          </a>
+          <a
+            href="https:\\www.x.com"
+            target="_blank"
+            className="hover:text-[#00df9a] transition-colors duration-300"
+          >
+            <FaTwitterSquare size={30} />
+          </a>
+          <a
+            href="https:\\www.youtube.com"
+            target="_blank"
+            className="hover:text-[#00df9a] transition-colors duration-300"
+          >
+            {" "}
+            <FaYoutubeSquare size={30} />
+          </a>
         </div>
       </div>
 
@@ -48,10 +80,19 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-gray-400">Support</h6>
           <ul>
-            <li className="py-2 text-sm">FAQs</li>
-            <li className="py-2 text-sm">Help Center</li>
-            <li className="py-2 text-sm">Privacy Policy</li>
-            <li className="py-2 text-sm">Terms of Service</li>
+            <Link to="/qa">
+              <li className="py-2 text-sm">FAQs</li>
+            </Link>
+            <Link to="/help">
+              <li className="py-2 text-sm">Help Center</li>
+            </Link>
+            <Link to="/privacypolicy">
+              <li className="py-2 text-sm">Privacy Policy</li>
+            </Link>
+            <Link to="/termsofservice">
+              {" "}
+              <li className="py-2 text-sm">Terms of Service</li>
+            </Link>
           </ul>
         </div>
       </div>

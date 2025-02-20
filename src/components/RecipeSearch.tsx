@@ -1,5 +1,6 @@
 import React from "react";
 import { CgSearch } from "react-icons/cg";
+
 const RecipeSearch = () => {
   return (
     <div className="p-4">
