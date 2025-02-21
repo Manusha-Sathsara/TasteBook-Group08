@@ -1,22 +1,14 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { CgSearch } from "react-icons/cg";
+import RecipeSearch from "./RecipeSearch";
 const Hero = () => {
   return (
     <div className="text-white">
-      <div className="flex items-center justify-center mt-4 relative w-full max-w-[400px] mx-auto">
-        <input
-          type="text"
-          placeholder="Search recipes..."
-          className="w-full p-3 pl-5 pr-10 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:border-[#00df9a] transition duration-300"
-        />
-        <CgSearch
-          className="absolute right-3 text-gray-400 cursor-pointer hover:text-[#00df9a] transition duration-300"
-          size={20}
-        />
-      </div>
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto  text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold p-2 ">Unlock the Secrets of</p>
+        <p className="text-[#00df9a] font-bold p-2 md:text-2xl ">
+          Unlock the Secrets of
+        </p>
         <h1 className=" font-bold p-2 md:text-7xl sm:text-6xl text-4xl md:py-6">
           Great Cooking
         </h1>
@@ -35,6 +27,7 @@ const Hero = () => {
         <p className="md:text-2xl text-xl font-bold text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
+        <RecipeSearch />
         <button className="bg-[#00df9a] text-black w-[200px] rounded-md font-medium my-6 mx-auto py-3">
           Get Started
         </button>
