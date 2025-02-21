@@ -1,7 +1,9 @@
 import "./App.css";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
-import SocialLinks from "./components/SocialLinks";
+import Cards from "./components/Cards";
+import Abouts from "./components/Abouts";
+
 
 
 function App() {
@@ -9,7 +11,8 @@ function App() {
     <>
       <NavBar />
       <Hero />
-      <SocialLinks />
+      <Cards />
+      <Abouts/>
     </>
   );
 }
